@@ -2,10 +2,10 @@
 var output = [];
 
 function beepBoop(number) {
-    for (i=0; i< number; i++) {
-      return i;
-      output.push(i, "");
-
+    for (i=0; i<= number; i++) {
+      output.push(i);
+    console.log(i);
+    console.log(output);
   }
 };
 
@@ -22,6 +22,6 @@ $(document).ready(function() {
     event.preventDefault();
     var number = parseInt($("input#number").val());
     var output = beepBoop(number);
-    $("#output").text(output);
+    $("#output").show(output);
   });
 });
