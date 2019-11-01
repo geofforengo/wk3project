@@ -1,5 +1,13 @@
 //Business Logic
+var output = [];
 
+function beepBoop(number) {
+    for (i=0; i< number; i++) {
+      return i;
+      output.push(i, "");
+
+  }
+};
 
 
 
