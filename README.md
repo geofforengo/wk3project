@@ -2,7 +2,7 @@
 
 #### _A program which establishes a range of numbers based off of a number inputted by the user and replaces certain values with text, 11/1/19_
 
-#### By_**Geoffrey Orengo**_
+#### By _**Geoffrey Orengo**_
 
 ## _Description_
 
