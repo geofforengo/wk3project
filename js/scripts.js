@@ -7,6 +7,9 @@ function beepBoop(number) {
     console.log(i);
     console.log(output);
   }
+  if (i=1 ) {
+    
+  }
 };
 
 
@@ -22,6 +25,6 @@ $(document).ready(function() {
     event.preventDefault();
     var number = parseInt($("input#number").val());
     var output = beepBoop(number);
-    $("#output").show(output);
+    $("#output").text(output);
   });
 });

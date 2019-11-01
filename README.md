@@ -12,6 +12,16 @@
 * _The program replaces any digit containing a two in the range with Boop!._
 * _The program replaces any digit containing a three in the range with "I'm sorry Dave, I can't do that."._
 
+| Specifications                                                       | Input | Output                                                   |
+|----------------------------------------------------------------------|-------|----------------------------------------------------------|
+|     Program returns a range from 0 to the user's inputted number     | 4     | 0,1,2,3,4                                                |
+| If input  isn't a number return the value                            | A     | A                                                        |
+| If a number in the range contains a 1 then replace with "Beep!"      | 1     | 0, "Beep!"                                               |
+| If there is a 2 then replace with "Boop!"                            | 2     | 0,"Beep!", "Boop!"                                       |
+| If there is a 3 then replace with "I'm sorry Dave, I can't do that." | 5     | 0,"Beep!","Boop!","I'm sorry Dave, I can't do that.",4,5 |
+| The behavior for 2 overrides the behavior for 1                      | 12    | "Boop!"                                                  |
+| The behavior for 3 overrides the behavior for 2                      | 13    | "I'm sorry Dave, I can't do that."                       |
+
 ## Setup/Installation Requirements
 
 * _The index.html file can be used on a web browser of the user's choice._
