@@ -1,20 +1,27 @@
 //Business Logic
 function beepBoop(number) {
-    var output = [];
+    var outputs = [];
     for (i=0; i<= number; i++) {
-      output.push(i);
+      outputs.push(i);
     console.log(i);
-    console.log(output);
+    console.log(outputs);
   }
+  outputs.forEach(function(output) {
   if (i===3 ) {
-    let i = ("I'm sorry Dave, I can't do that.");
+    outputs.push("I'm sorry Dave, I can't do that.");
+
   }
   else if (i===2) {
-    let i = "Boop";
+    outputs.push("Boop");
+
   }
   else if (i===1) {
-    let i = "Beep";
+    outputs.push("Beep");
+
   }
+  return outputs;
+
+})
 };
 
 
@@ -29,7 +36,7 @@ $(document).ready(function() {
   $("form#beepboop").submit(function(event) {
     event.preventDefault();
     var number = parseInt($("input#number").val());
-    var output = beepBoop(number);
-    $("#output").text(output);
+    var result = beepBoop(number);
+    $("#output").text(result);
   });
 });
